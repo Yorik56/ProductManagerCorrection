@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>ProductManagerCorrection</display-name>
+  <servlet>
+    <servlet-name>BasicInsertServlet</servlet-name>
+    <servlet-class>fr.mds.productmanager.servlet.BasicInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BasicInsertServlet</servlet-name>
+    <url-pattern>/basicInsert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListProductServlet</servlet-name>
+    <servlet-class>fr.mds.productmanager.servlet.ListProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListProductServlet</servlet-name>
+    <url-pattern>/listProduct</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShowProductServlet</servlet-name>
+    <servlet-class>fr.mds.productmanager.servlet.ShowProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowProductServlet</servlet-name>
+    <url-pattern>/showProduct</url-pattern>
+  </servlet-mapping>
+</web-app>
